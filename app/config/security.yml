@@ -1,0 +1,39 @@
+jms_security_extra:
+    secure_all_services: true
+    expressions: true
+security:
+    encoders:
+        Sij\UserBundle\Entity\User:
+            algorithm:        sha1
+            encode_as_base64: false
+            iterations:       1
+
+    role_hierarchy:
+        ROLE_DIRECTEUR:       [ROLE_USER]
+        ROLE_ADMIN:           [ROLE_DIRECTEUR]
+        ROLE_SUPER_ADMIN :    [ROLE_ADMIN,ROLE_ALLOWED_TO_SWITCH]
+
+    providers:
+        user_provider:
+            entity: { class: Sij\UserBundle\Entity\User, property: username }
+
+    firewalls:
+        secured_area:
+            security: true
+            pattern: /.*
+            provider: user_provider
+            anonymous: ~
+            form_login:
+                login_path: /login
+                check_path: login_check
+                always_use_default_target_path: true
+                default_target_path: /user/dashboard
+
+
+
+            logout:
+                path:   /logout
+                target: /login
+
+    access_control:
+        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }

@@ -1,0 +1,10 @@
+sij_core:
+    resource: "@SijCoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+sij_user:
+    resource: "@SijUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
