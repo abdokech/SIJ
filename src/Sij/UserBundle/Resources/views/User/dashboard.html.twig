@@ -1,0 +1,306 @@
+{% extends 'SijCoreBundle:Html:base.html.twig' %}
+{% block maincontainer %}
+<div id="container">
+<div id="content">
+
+
+
+<div class="speedbar">
+    <div class="speedbar-nav"> <a href="#">Color life Admin Panel</a> &rsaquo; <a href="#">Dashboard</a></div>
+
+    <div class="search">
+        <form>
+            <input type="text">
+        </form>
+    </div>
+</div>
+
+
+<!--Statistic-->
+<div class="grid-1">
+    <div class="title-grid">Charts</div>
+    <div class="content-gird">
+        <div class="reports">
+            <div class="report">
+                <p class="report-title">Total visits</p>
+                <p class="report-figures">933,273 </p>
+                <div class="clear"></div>
+                <div class="headway"><div class="advance" style="width:40%;"></div></div>
+            </div>
+
+            <div class="report-2">
+                <p class="report-title">New visitors</p>
+                <p class="report-figures">912</p>
+                <div class="clear"></div>
+                <div class="headway"><div class="advance" style="width:80%;"></div></div>
+            </div>
+
+            <div class="report-2 report-last">
+                <p class="report-title">Page views</p>
+                <p class="report-figures">35%</p>
+                <div class="clear"></div>
+                <div class="headway"><div class="advance" style="width:35%;"></div></div>
+            </div>
+
+            <div class="report-2">
+                <p class="report-title">Active visits</p>
+                <p class="report-figures">23%</p>
+                <div class="clear"></div>
+                <div class="headway"><div class="advance" style="width:23%;"></div></div>
+            </div>
+
+            <div class="report-2 report-last">
+                <p class="report-title">Fans</p>
+                <p class="report-figures">3,860 </p>
+                <div class="clear"></div>
+                <div class="headway"><div class="advance" style="width:60%;"></div></div>
+            </div>
+        </div>
+        <div class="chart chart-main"></div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--Statistic end-->
+
+<!-- Information data -->
+<div class="information-data">
+    <div class="date">
+        <p class="date-figures">935</p>
+        <div class="headway-2"><div class="advance-2" style="width:80%;"></div></div>
+        <p class="date-title">Likes</p>
+    </div>
+    <div class="date">
+        <p class="date-figures">35%</p>
+        <div class="headway-2"><div class="advance-2" style="width:35%;"></div></div>
+        <p class="date-title">Shots</p>
+    </div>
+    <div class="date">
+        <p class="date-figures">165</p>
+        <div class="headway-2"><div class="advance-2" style="width:60%;"></div></div>
+        <p class="date-title">Comments</p>
+    </div>
+    <div class="date">
+        <p class="date-figures">95%</p>
+        <div class="headway-2"><div class="advance-2" style="width:95%;"></div></div>
+        <p class="date-title">Updates</p>
+    </div>
+    <div class="date">
+        <p class="date-figures">1245</p>
+        <div class="headway-2"><div class="advance-2" style="width:92%;"></div></div>
+        <p class="date-title">Text</p>
+    </div>
+    <div class="date">
+        <p class="date-figures">153</p>
+        <div class="headway-2"><div class="advance-2" style="width:60%;"></div></div>
+        <p class="date-title">Text</p>
+    </div>
+    <div class="date  date-last">
+        <p class="date-figures">13</p>
+        <div class="headway-2"><div class="advance-2" style="width:13%;"></div></div>
+        <p class="date-title">Text</p>
+    </div>
+</div>
+<!-- Information data end -->
+
+<!--Pictures-->
+<div class="grid-2">
+    <div class="title-grid">Pictures</div>
+    <div class="content-gird">
+        <ul class="gallery">
+            <li><a class="fancybox" href="{{ asset('bundles/sijcore/images/fullscreen/1.jpg')}}">  <img src=""{{ asset('bundles/sijcore/images/thumbnails/t_1.jpg')}}" alt=""  /></a>
+                <ul class="img_options">
+                    <li><a class="zoom fancybox" href="{{ asset('bundles/sijcore/images/fullscreen/1.jpg')}}"><span>View</span></a></li>
+                </ul>
+            </li>
+            <li><a class="fancybox" href="{{ asset('bundles/sijcore/images/fullscreen/2.jpg')}}">  <img src=""{{ asset('bundles/sijcore/images/thumbnails/t_2.jpg')}}" alt=""  /></a>
+                <ul class="img_options">
+                    <li><a class="zoom fancybox" href="{{ asset('bundles/sijcore/images/fullscreen/2.jpg')}}"><span>View</span></a></li>
+                </ul>
+            </li>
+            <li><a class="fancybox" href="{{ asset('bundles/sijcore/images/fullscreen/3.jpg')}}">  <img src=""{{ asset('bundles/sijcore/images/thumbnails/t_3.jpg')}}" alt=""  /></a>
+                <ul class="img_options">
+                    <li><a class="zoom fancybox" href="{{ asset('bundles/sijcore/images/fullscreen/3.jpg')}}"><span>View</span></a></li>
+                </ul>
+            </li>
+
+        </ul>
+        <div class="clear"> </div>
+    </div>
+</div>
+<!--Pictures end-->
+
+<!--Buttons-->
+<div class="grid-2 last right">
+    <div class="title-grid">Buttons</div>
+    <div class="content-gird">
+        <div class="buttons-content">
+            <ul class="buttons">
+                <li><a class="button-a gray" href="#"><span>Link Button</span></a></li>
+                <li><input type="submit" class="button-a gray" value="Input type submit"></li>
+                <li><button class="button-a gray">Button gray</button></li>
+
+            </ul>
+            <div class="clear"></div>
+            <ul class="buttons">
+                <li><a class="button-a blue" href="#"><span>Link Button</span></a></li>
+                <li><input type="submit" class="button-a blue" value="Input type submit"></li>
+                <li><button class="button-a blue">Button blue</button></li>
+
+            </ul>
+            <div class="clear"></div>
+            <ul class="buttons">
+                <li><a class="button-a dark-blue" href="#"><span>Link Button</span></a></li>
+                <li><input type="submit" class="button-a dark-blue" value="Input type submit"></li>
+                <li><button class="button-a dark-blue">Button dark</button></li>
+
+            </ul>
+            <div class="clear"></div>
+            <ul class="buttons">
+                <li><a class="button-a red" href="#"><span>Link Button</span></a></li>
+                <li><input type="submit" class="button-a red" value="Input type submit"></li>
+                <li><button class="button-a red">Button red..</button></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--Buttons end-->
+
+<!--Accordion-->
+<div id="accordion" class="accordion last">
+    <h3><a>Accordion</a></h3>
+    <div><p>Hello!<br>Merry Christmas y'all. </p></div>
+    <h3><a>Accordion</a></h3>
+    <div><p>Hello!<br>Merry Christmas y'all. </p></div>
+    <h3><a>Accordion</a></h3>
+    <div><p>Hello!<br>Merry Christmas y'all. </p></div>
+    <h3><a>Accordion</a></h3>
+    <div><p>Hello!<br>Merry Christmas y'all. </p></div>
+</div>
+<div class="clear"></div>
+<!--Accordion end-->
+
+<!--Articles-->
+<div class="grid-1">
+    <div class="title-grid">Articles</div>
+    <div class="content-gird">
+        <div class="articles">
+            <div class="article">
+                <p class="identifier">1</p>
+                <div class="article-content">
+                    <p class="article-title"><a href="#">Loading bar</a></p>
+                    <ul class="article-action">
+                        <li><a href="#" class="article-edit tip-top" title="Edit">edit</a></li>
+                        <li><a href="#" class="article-delete tip-top" title="Delete">delete</a></li>
+                    </ul>
+                    <p class="article-description">I worked on the little loading bar a little bit today. Also bumped up the text contrast a little bit. Merry Christmas y'all. You should also probably follow...</p>
+                    <p class="article-author">Posted: <a href="#">Erik Deiner</a></p>
+                </div>
+            </div>
+
+            <div class="article">
+                <p class="identifier">2</p>
+                <div class="article-content">
+                    <p class="article-title"><a href="#">Loading bar</a></p>
+                    <ul class="article-action">
+                        <li><a href="#" class="article-edit tip-top" title="Edit">edit</a></li>
+                        <li><a href="#" class="article-delete tip-top" title="Delete">delete</a></li>
+                    </ul>
+                    <p class="article-description">I worked on the little loading bar a little bit today. Also bumped up the text contrast a little bit. Merry Christmas y'all. You should also probably follow...</p>
+                    <p class="article-author">Posted: <a href="#">Erik Deiner</a></p>
+                </div>
+            </div>
+
+            <div class="article">
+                <p class="identifier">3</p>
+                <div class="article-content">
+                    <p class="article-title"><a href="#">Loading bar</a></p>
+                    <ul class="article-action">
+                        <li><a href="#" class="article-edit tip-top" title="Edit">edit</a></li>
+                        <li><a href="#" class="article-delete tip-top" title="Delete">delete</a></li>
+                    </ul>
+                    <p class="article-description">I worked on the little loading bar a little bit today. Also bumped up the text contrast a little bit. Merry Christmas y'all. You should also probably follow...</p>
+                    <p class="article-author">Posted: <a href="#">Erik Deiner</a></p>
+                </div>
+            </div>
+
+            <div class="article">
+                <p class="identifier">4</p>
+                <div class="article-content">
+                    <p class="article-title"><a href="#">Loading bar</a></p>
+                    <ul class="article-action">
+                        <li><a href="#" class="article-edit tip-top" title="Edit">edit</a></li>
+                        <li><a href="#" class="article-delete tip-top" title="Delete">delete</a></li>
+                    </ul>
+                    <p class="article-description">I worked on the little loading bar a little bit today. Also bumped up the text contrast a little bit. Merry Christmas y'all. You should also probably follow...</p>
+                    <p class="article-author">Posted: <a href="#">Erik Deiner</a></p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--Articles end-->
+
+
+</div><!-- #content-->
+</div><!-- #container-->
+
+<aside id="sideLeft">
+    <span class="categories">Categories</span>
+    <ul class="menu">
+        <li class="expand">
+            <a href="#"><span class="four-prong icon">General</span><span class="num">5</span></a>
+            <ul class="acitem">
+                <li><a href="/dashboard.html"><span class="dashboard icon">Dashboard</span></a></li>
+                <li><a href="/charts.html"><span class="charts icon">Charts</span></a></li>
+                <li><a href="/gallery.html"><span class="gallery-pic icon">Image Gallery</span></a></li>
+                <li><a href="/calendar.html"><span class="cal icon">Calendar</span></a></li>
+                <li><a href="/messages.html"><span class="conversations icon">Page Messages</span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><span class="four-prong icon">Styling</span><span class="num">5</span></a>
+            <ul class="acitem">
+                <li><a href="/forms.html"><span class="forms icon">Form Styling</span></a></li>
+                <li><a href="/table.html"><span class="tables icon">Table Styling</span></a></li>
+                <li><a href="/grid.html"><span class="grids icon">Grid Styling</span></a></li>
+                <li><a href="/buttons.html"><span class="buttons-icons icon">Buttons & Icons</span></a></li>
+                <li><a href="/typo.html"><span class="typo icon">Typo</span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><span class="four-prong icon">Plugins</span><span class="num">6</span></a>
+            <ul class="acitem">
+                <li><a href="/widgets.html"><span class="invoice icon">Widgets</span></a></li>
+                <li><a href="/plaeyr.html"><span class="youtube icon">HTML5 Player</span></a></li>
+                <li><a href="/editor.html"><span class="w-editor icon">WYSIWYG Editor</span></a></li>
+                <li><a href="/file.html"><span class="files icon">File Manager</span></a></li>
+                <li><a href="/step.html"><span class="steps icon">Step By Step Wizard</span></a></li>
+                <li><a href="/contact.html"><span class="connection icon">Contact List</span></a></li>
+                <li><a href="/dialogs.html"><span class="forms icon">Dialogs</span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><span class="four-prong icon">Errore Page</span><span class="num">3</span></a>
+            <ul class="acitem">
+                <li><a href="/404.html"><span class="errors icon">Error 404</span></a></li>
+                <li><a href="/500.html"><span class="errors icon">Error 500</span></a></li>
+                <li><a href="/503.html"><span class="errors icon">Error 503</span></a></li>
+            </ul>
+        </li>
+    </ul>
+    <span class="categories">Online chat</span>
+    <ul class="menu-online">
+        <li><a href="/messages.html"><span class="ava-online"><img src="images/ava-2.png" alt=""><span class="num-online">2</span></span><span class="name-online">Franck Mudi</span><span class="online"></span></a></li>
+        <li><a href="/messages.html"><span class="ava-online"><img src="images/ava-1.png" alt=""></span><span class="name-online">Colin Farrell</span><span class="online"></span></a></li>
+        <li><a href="/messages.html"><span class="ava-online"><img src="images/ava-4.png" alt=""><span class="num-online">3</span></span><span class="name-online">Bridget Moynean</span><span class="online"></span></a></li>
+        <li><a href="/messages.html"><span class="ava-online"><img src="images/ava-3.png" alt=""></span><span class="name-online">Al Pacino</span><span class="online"></span></a></li>
+        <li><a href="/messages.html"><span class="ava-online"><img src="images/ava-5.png" alt=""></span><span class="name-online">Gebriel Makht</span><span class="online"></span></a></li>
+    </ul>
+
+    </div>
+</aside><!-- #sideLeft -->
+{% endblock %}

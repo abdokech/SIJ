@@ -1,0 +1,39 @@
+{% javascripts
+'bundles/sijcore/lib/jquery-ui-1.8.16.custom.min.js'
+
+'bundles/sijcore/lib/ddaccordion.js'
+'bundles/sijcore/lib/jquery.flot.min.js'
+'bundles/sijcore/lib/jquery.flot.pie.js'
+'bundles/sijcore/lib/jquery.flot.orderBars.js'
+'bundles/sijcore/lib/jquery.flot.resize.js'
+'bundles/sijcore/lib/fancybox/fancybox.js'
+'bundles/sijcore/lib/fullcalendar.min.js'
+'bundles/sijcore/lib/elfinder/js/elfinder.min.js'
+'bundles/sijcore/lib/editor/jquery.wysiwyg.js'
+'bundles/sijcore/lib/editor/wysiwyg.image.js'
+'bundles/sijcore/lib/editor/default.js'
+'bundles/sijcore/lib/editor/wysiwyg.link.js'
+'bundles/sijcore/lib/editor/wysiwyg.table.js'
+'bundles/sijcore/lib/player/jquery-jplayer/jquery.jplayer.js'
+'bundles/sijcore/lib/player/ttw-video-player-min.js'
+'bundles/sijcore/lib/jquery.tipTip.minified.js'
+'bundles/sijcore/lib/forms.js'
+'bundles/sijcore/lib/chosen.jquery.min.js'
+'bundles/sijcore/lib/autoresize.jquery.min.js'
+'bundles/sijcore/lib/colorpicker.js'
+'bundles/sijcore/lib/validation.js'
+'bundles/sijcore/lib/jquery.dataTables.min.js'
+'bundles/sijcore/lib/jquery.jgrowl_minimized.js'
+'bundles/sijcore/lib/jquery.alerts.js'
+'bundles/sijcore/lib/slidernav-min.js'
+'bundles/sijcore/lib/formToWizard.js'
+'bundles/sijcore/lib/jquery.validationEngine.js'
+'bundles/sijcore/lib/jquery.validationEngine-en.js'
+output='js/script.js' filter='?yui_js'
+%}
+<script src="{{ asset_url }}" type="text/javascript"></script>
+{% endjavascripts %}
+
+<!--[if lte IE 8]>
+<script src="{{ asset('/js/html5.js') }}" type="text/javascript"></script>
+<![endif]-->

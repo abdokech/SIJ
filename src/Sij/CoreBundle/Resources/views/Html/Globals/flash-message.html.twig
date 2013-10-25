@@ -1,0 +1,9 @@
+{% if ( app.session.hasFlash('notice') or  app.session.hasFlash('error') ) %}
+    <div style="text-align: center; color: red; font-weight: bold;">
+        {% if app.session.hasFlash('notice') %}
+            {{ app.session.flash('notice') | raw }}
+        {% elseif app.session.hasFlash('error') %}
+            {{ app.session.flash('error') }}
+        {% endif %}
+    </div>
+{% endif %}
