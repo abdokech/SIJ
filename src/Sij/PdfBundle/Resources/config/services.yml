@@ -1,0 +1,7 @@
+parameters:
+#    sij_pdf.example.class: Sij\PdfBundle\Example
+
+services:
+#    sij_pdf.example:
+#        class: %sij_pdf.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

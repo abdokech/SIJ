@@ -8,3 +8,7 @@ sij_user:
     type:     annotation
     prefix:   /
 
+sij_pdf:
+    resource: "@SijPdfBundle/Controller/"
+    type:     annotation
+    prefix:   /reporting

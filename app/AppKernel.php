@@ -19,9 +19,12 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new JMS\AopBundle\JMSAopBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
+        	/*projet KnpSnappyBundle*/
+        	new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
             /* Project Bundle */
             new Sij\UserBundle\SijUserBundle(),
             new Sij\CoreBundle\SijCoreBundle(),
+        	new Sij\PdfBundle\SijPdfBundle(),
             /**/
             /*Project JordiLlonch Bundle*/
             new Lexik\Bundle\FormFilterBundle\LexikFormFilterBundle(),
