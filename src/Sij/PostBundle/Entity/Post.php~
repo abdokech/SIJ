@@ -1,0 +1,38 @@
+<?php 
+namespace Sij\PostBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="post")
+ */
+class Post
+{
+	const STATUS_DRAFT="draft_created";
+	const STATUS_VALIDATED="validated_by_admin";
+	const STATUS_PUBLISHED="published";
+	const STATUS_UNPUBLISHED="unpublished";
+	const STATUS_DELETED="deleted";
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    protected $status;
+    
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    protected $name;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    protected $description;
+}

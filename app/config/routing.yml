@@ -1,3 +1,8 @@
+sij_post:
+    resource: "@SijPostBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 sij_core:
     resource: "@SijCoreBundle/Controller/"
     type:     annotation

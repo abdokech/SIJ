@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f413d0a1f6a19aa3fa8075a2698c6620",
+    "hash": "62b941de2e1437401e23d9a12f11e530",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1618,6 +1618,65 @@
             "time": "2013-06-04 08:35:57"
         },
         {
+            "name": "lexik/workflow-bundle",
+            "version": "dev-master",
+            "target-dir": "Lexik/Bundle/WorkflowBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lexik/LexikWorkflowBundle.git",
+                "reference": "127308351230932f2483bd99b54512ef89042672"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lexik/LexikWorkflowBundle/zipball/127308351230932f2483bd99b54512ef89042672",
+                "reference": "127308351230932f2483bd99b54512ef89042672",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/symfony": ">=2.0,<2.4-dev"
+            },
+            "require-dev": {
+                "doctrine/orm": ">=2.2,<2.5-dev"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Lexik\\Bundle\\WorkflowBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Barthe",
+                    "email": "j.barthe@lexik.fr"
+                },
+                {
+                    "name": "Dev Lexik",
+                    "email": "dev@lexik.fr"
+                },
+                {
+                    "name": "Cedric Girard",
+                    "email": "c.girard@lexik.fr"
+                },
+                {
+                    "name": "Jérémy Romey",
+                    "email": "jeremy@free-agent.fr"
+                }
+            ],
+            "description": "Simple workflow bundle for Symfony2",
+            "homepage": "https://github.com/lexik/LexikWorkflowBundle",
+            "keywords": [
+                "Symfony2",
+                "bundle",
+                "workflow"
+            ],
+            "time": "2013-10-24 09:25:58"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.6.0",
             "source": {
@@ -2504,14 +2563,15 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "doctrine/doctrine-fixtures-bundle": 20,
         "doctrine/doctrine-migrations-bundle": 20,
+        "doctrine/doctrine-fixtures-bundle": 20,
+        "lexik/workflow-bundle": 20,
         "knplabs/knp-snappy-bundle": 20,
-        "jordillonch/crud-generator": 20,
-        "jms/security-extra-bundle": 20,
         "doctrine/data-fixtures": 20,
-        "jms/serializer-bundle": 20,
-        "doctrine/migrations": 20
+        "jms/security-extra-bundle": 20,
+        "jordillonch/crud-generator": 20,
+        "doctrine/migrations": 20,
+        "jms/serializer-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"

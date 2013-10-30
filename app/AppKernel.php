@@ -21,6 +21,9 @@ class AppKernel extends Kernel
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
         	/*projet KnpSnappyBundle*/
         	new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
+        	/* workflow Bundle */
+        	new Lexik\Bundle\WorkflowBundle\LexikWorkflowBundle(),
+        	/**/
             /* Project Bundle */
             new Sij\UserBundle\SijUserBundle(),
             new Sij\CoreBundle\SijCoreBundle(),
@@ -32,7 +35,8 @@ class AppKernel extends Kernel
             /**/
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle()
-
+,
+            new Sij\PostBundle\SijPostBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
