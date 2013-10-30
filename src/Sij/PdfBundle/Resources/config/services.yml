@@ -5,3 +5,9 @@ services:
 #    sij_pdf.example:
 #        class: %sij_pdf.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
+
+    sij_pdf.reporting:
+        class: Sij\PdfBundle\Reporting\SijReporting
+        arguments: [@service_container]
+        tags:
+            - { name: twig.extension }

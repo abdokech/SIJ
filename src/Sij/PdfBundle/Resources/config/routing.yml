@@ -1,8 +1,0 @@
-sij_pdf_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: SijPdfBundle:Reporting:index }
-    
-    
-sij_pdf_render:
-    pattern:  /render/{view}/{methode}/{name}
-    defaults: { _controller: SijPdfBundle:Reporting:render }
